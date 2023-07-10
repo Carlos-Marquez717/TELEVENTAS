@@ -1,0 +1,50 @@
+<% if flash[:notice] %>
+  <% Array(flash[:notice]).each do |message| %>
+    <div class="alert alert-success">
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<p style="color: green"><%= notice %></p>
+
+<center><h1>CLIENTES</h1></center>
+<div class="container">
+  <%= form_tag(clientes_path, method: :get, class: "mb-3") do %>
+    <div class="input-group">
+      <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Buscar clientes..." %>
+      <div class="input-group-append">
+        <%= submit_tag "Buscar", class: "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+
+  <table class="table table-dark text-center">
+    <thead>
+      <tr>
+        <th scope="col">Número Telefónico</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Acciones <%= link_to "AGREGAR CLIENTE", new_cliente_path, class: "btn btn-success" %>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @clientes.each do |cliente| %>
+        <tr>
+          <td><%= cliente.numero_telefonico %></td>
+          <td><%= cliente.nombre %></td>
+          <td><%= cliente.email %></td>
+          <td>
+            <%= link_to "AGREGAR LLAMADAS", new_cliente_llamado_path(cliente), class: "btn btn-primary" %>
+            <%= link_to "VER LLAMADAS", cliente_llamados_path(cliente), class: "btn btn-primary" %>
+            <%= link_to "EDITAR", edit_cliente_path(cliente), class: "btn btn-secondary" %>
+            <%= link_to "Eliminar", cliente_path(cliente), method: :delete, data: { confirm: "¿Estás seguro de eliminar este cliente?" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= will_paginate @clientes %>
+</div>

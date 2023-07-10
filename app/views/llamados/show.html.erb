@@ -1,0 +1,6 @@
+<div>
+  <%= link_to "Edit this llamado",  cliente_llamado_path(@llamado) %> |
+  <%= link_to "Back to llamados", cliente_llamados_path(@cliente) %>
+  <%= button_to "Destroy this llamado", cliente_llamado_path(@cliente, @llamado), method: :delete %>
+</div>
+

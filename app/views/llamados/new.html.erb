@@ -1,0 +1,32 @@
+<BR>
+
+<div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-success text-center" role="alert">
+      <%= value %>
+    </div>
+  <% end %>
+
+  <!-- Resto del contenido de la vista -->
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+          <h1 class="text-center">AGREGAR LLAMADAS</h1>
+
+          <%= render "form", llamado: @llamado %>
+
+          <br>
+
+          <div class="text-center">
+            <%= link_to "REGRESAR", cliente_llamados_path(@cliente), class: "btn btn-secondary" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

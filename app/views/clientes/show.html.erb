@@ -1,0 +1,28 @@
+
+<BR><BR>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="custom-form bg-dark text-white p-4">
+        <h1 class="text-center">Editar cliente</h1>
+
+        <% if notice %>
+          <p class="text-success"><%= notice %></p>
+        <% end %>
+
+        <%= render @cliente %>
+
+        <div>
+          <%= link_to "EDITAR", edit_cliente_path(@cliente), class: "btn btn-secondary" %> |
+          <%= link_to "REGRESAR", clientes_path, class: "btn btn-secondary" %>
+          <BR>
+
+          <%= button_to "ELIMINAR", @cliente, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+          <BR>
+          <%= link_to "MOSTRAR LLAMADOS", cliente_llamados_path(@cliente), class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

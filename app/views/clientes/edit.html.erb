@@ -1,0 +1,47 @@
+<BR><BR>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="custom-form bg-dark text-white p-4">
+        <h1 class="text-center">Editar cliente</h1>
+
+        <%= form_with(model: @cliente, url: cliente_path(@cliente), method: :patch, html: {class: "needs-validation", novalidate: true}) do |form| %>
+          <% if @cliente.errors.any? %>
+            <div class="alert alert-danger">
+              <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+              <ul>
+                <% @cliente.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="mb-3">
+            <%= form.label :nombre, class: "form-label" %>
+            <%= form.text_field :nombre, class: "form-control" %>
+          </div>
+
+          <div class="mb-3">
+            <%= form.label :numero_telefonico, class: "form-label" %>
+            <%= form.text_field :numero_telefonico, class: "form-control" %>
+          </div>
+
+          <div class="mb-3">
+            <%= form.label :email, class: "form-label" %>
+            <%= form.email_field :email, class: "form-control" %>
+          </div>
+
+          <div class="text-center">
+            <%= form.submit 'Guardar cambios', class: "btn btn-primary" %>
+          </div>
+        <% end %>
+
+        <div class="text-center mt-3">
+          <%= link_to 'Cancelar', cliente_path(@cliente), class: "btn btn-secondary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,51 @@
+<BR><BR>
+<div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-success" role="alert">
+      <%= value %>
+    </div>
+  <% end %>
+
+  <!-- Resto del contenido de la vista -->
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="text-center">LLAMADO DE: <%= @cliente.nombre %></h1>
+      
+      <table class="table table-dark text-center">
+        <thead>
+          <tr>
+            <th>MOTIVO</th>
+            <th>FECHA</th>
+            <th>EDITAR</th>
+            <th>ELIMINAR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @llamados.each do |llamado| %>
+            <tr>
+              <td class="text-center"><%= llamado.motivo %></td>
+              <td class="text-center"><%= llamado.fecha %></td>
+              <td>
+                
+                <%= link_to "EDITAR", new_cliente_llamado_path(@cliente, llamado), class: "btn btn-secondary" %>
+                
+              </td>
+               <td>
+                
+                
+                <%= button_to "ELIMINAR", cliente_llamado_path(@cliente, llamado), method: :delete, data: { confirm: "¿Estás seguro de eliminar este llamado?" }, class: "btn btn-danger" %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
