@@ -1,2 +1,2 @@
-ruby File.read('.ruby-version').strip
+2.7.8
 
