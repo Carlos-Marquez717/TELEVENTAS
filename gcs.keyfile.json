@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "televentas-406615",
+  "private_key_id": "d04992f9b029b762332b27d093659a9a4b3321c7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/P4YrTYl8q7Dk\nsKHNWhM2xwIXOnMqBFik5EuMosCrSxhCDiGUIzbpZwoQvMUMA9cSwM+3FdZFC9my\nN8/SIaPekTsqPJo9vc5m+0zOaRycZdFaIR2pPW0E7FRkSfNLxx/X31E7okRkIOKH\nj7Ir2lHv6CPm9nJiaL6VpecJ2le13NZ53nao2fPPICqiOl1AvSuFslSEvk0W542o\n6eXghKMy+f+tgD5Xuprcgnf5uKF9b2NvAHvDYAIYriBPoP9fQpqDvwUDjvzSPCDf\ndrrj3vdFwavBi+4bgMAAc8JHOzPb18faMiAOLl6SyKpMNJePnhDNiaBl4QM+UDLj\ntYUz/3NrAgMBAAECggEATImrtGDPiSldHejimEBYOC/k0k7+D+61WyhSY/IukV74\nUlc9cP+21in6iUBCy9Atnr+zYV5H5lIbyYs0jLAR2NzehMTEJbl0hRpFXsYKQT0u\nT5e5OyXuH25FR+2ghM8oG0iwReFm5XuTrRUBBTPWXuDUnXY7yM6Kl3FRyUuslocc\n1+o2/V/t49hNI2NTO/LM9hPXFI1878xV53QeFLM7avcEEHteUvexgRHcs1fz/Iab\nBxkyZMDH4gzuDXvi+PnkmSjKCuzwC1xO/iFuYHlOnxSSuB1q1cSze3MGBnhnveof\n8rT+SojGGHOxo1GPIah+dTjrC1/A1nZaJOCkLGxXYQKBgQD2pUsUrTwmAMPGCdxT\n9TLTQICHoyScjSnl5EmklbUBT9cY5c6iSRWkPowYETFFdL2D+Xb9ttScVtTpkrxv\nL3xFRR4L2A1EmxXW0bcSgcQ8a5neQuctx8W/ibXb1jbZ6OTGCLFWAoDgiKmjtH3C\nwDXPt+Xu6PtJ5K7yQcNj0QxPhQKBgQDGgF7rsFqAlS6COzVAKBH3+8mL1UHoeRiv\nbCL0GQT2gmeqEwMGOrQRbn5Db0vTnZ2dRBGAQWBx3ylJ2FISgE95GDyafss1B9Ox\nI/Wl8ap0BpfqGx+gofnFAENfB0RR7Dc8Ga7ZbtCpyz7nIlxssTE0GxKIGanow8st\njGgHGceSLwKBgQDxWbnol8Qd4+2u4oNJXMzJT3r2PzxaPQBcx1EQzrX6fKgc4vOa\ndi3JNLNd8aTnNF8mv3witT/DZGyfy0i8/Bh8qC/IozgIhEGQnlKot3bRMPG2Pn19\nnNjynszoO+wcu/rxlhwB8B0wmkp1uO6/HdsKUgecCzuqiS5wPM335N5JCQKBgC0z\n1mm9gx582lZ1vS6a8VyTTdY1/gg+a0ynR15mxCaOk6S7J5knjRHbI42frpjF77p8\nYa/fM2M6+mACjs3/whlFV6em8AdnfOF92tarLbG2Pqnk+1LND9+4q57cPMabEAjz\noEmLXqEL04s22+00fIvtDk9H6NVEoOQCcT4MtNGpAoGBAMcmHsh7t+MfnFnAUoSN\nWuxy2PO1if39F55oiJnrvmkh8mmnyjJ8oQGN8qpZZUyHKStObZWNFwJOH2+dhJxH\nRlKu0owfZ4CSFvovkC7FKrsxvB097bQKfEHwWWJOKrEWPLX/MN94xu/8kMBfpJ3j\n5tADXYeV6J/NwUUcbXyITKiZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "myserviceaccount@televentas-406615.iam.gserviceaccount.com",
+  "client_id": "115556947170617658013",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/myserviceaccount%40televentas-406615.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

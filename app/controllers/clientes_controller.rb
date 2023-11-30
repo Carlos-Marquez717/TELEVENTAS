@@ -20,10 +20,10 @@ class ClientesController < ApplicationController
     @cliente = Cliente.new(cliente_params)
 
     if @cliente.save
-      flash[:notice] = 'Cliente creado exitosamente'
+      flash[:notice] = 'CLIENTE CREADO EXITOSAMENTE'
       redirect_to clientes_path
     else
-      flash.now[:alert] = 'No se pudo crear el cliente'
+      flash.now[:alert] = 'NO SE PUDO CREAR CLIENTE'
       render :new
     end
   end
@@ -33,7 +33,7 @@ class ClientesController < ApplicationController
 
   def update
     if @cliente.update(cliente_params)
-      redirect_to cliente_path(@cliente), notice: 'Cliente actualizado correctamente'
+      redirect_to cliente_path(@cliente), notice: 'CLIENTE ACTUALIZADO CORRECTAMENTE'
     else
       render :edit
     end
@@ -46,7 +46,7 @@ class ClientesController < ApplicationController
     # Elimina el cliente
     @cliente.destroy
   
-    redirect_to clientes_path, notice: 'Cliente eliminado exitosamente'
+    redirect_to clientes_path, notice: 'CLIENTE ELIMINADO EXITOSAMENTE'
   end
   
 

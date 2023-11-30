@@ -1,0 +1,4 @@
+
+runtime: ruby25
+entrypoint: bundle exec rackup -p $PORT
+instance_class: F2

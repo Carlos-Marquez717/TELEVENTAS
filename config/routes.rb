@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :usuarios, controllers: {
-    sessions: 'usuarios/sessions'
+    sessions: 'usuarios/sessions',
+    registrations: 'usuarios/registrations'
   }
 
   devise_scope :usuario do

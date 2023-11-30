@@ -1,14 +1,22 @@
 <% if flash[:notice] %>
-  <% Array(flash[:notice]).each do |message| %>
-    <div class="alert alert-success">
+  <div class="alert alert-success text-center">
+    <% Array(flash[:notice]).each do |message| %>
       <%= message %>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 <% end %>
 
-<p style="color: green"><%= notice %></p>
 
-<center><h1>CLIENTES</h1></center>
+<br><br><br>
+
+<div class="container">
+  <div class="card text-center bg-dark text-white">
+    <div class="card-body">
+      <h1 class="card-title">CLIENTES</h1>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <%= form_tag(clientes_path, method: :get, class: "mb-3") do %>
     <div class="input-group">

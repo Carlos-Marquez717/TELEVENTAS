@@ -1,29 +1,97 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "usuarios/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
+
+<style> 
+.login-form,
+.forgot-password-form {
+  background: #343a40; /* Cambia el color de fondo según tus preferencias */
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.login-form h2,
+.forgot-password-form h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.login-form p,
+.forgot-password-form p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5rem;
+}
+
+.login-form .form-outline,
+.forgot-password-form .form-outline {
+  margin-bottom: 4rem;
+}
+
+.login-form .form-control,
+.forgot-password-form .form-control {
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+}
+
+.login-form .form-label,
+.forgot-password-form .form-label {
+  color: #fff;
+}
+
+.login-form .btn,
+.forgot-password-form .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+</style>
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white login-form">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= render "usuarios/shared/error_messages", resource: resource %>
+              <h4>REGISTRAR USUARIO<h4>
+            <div class="field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
+
+            <div class="field">
+              <%= f.label :password %>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "new-password" %>
+            </div>
+
+            <div class="field">
+              <%= f.label :password_confirmation %><br />
+              <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit "Sign up" %>
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+<section class="forgot-password-section forgot-password-form">
+  <!-- Resto del código del segundo formulario -->
+</section>
 
 <%= render "usuarios/shared/links" %>
+

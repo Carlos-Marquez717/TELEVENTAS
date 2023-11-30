@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="custom-form bg-dark text-white p-4">
-        <h1 class="text-center">Editar cliente</h1>
+        <h1 class="text-center">EDITAR CLIENTE</h1>
 
         <%= form_with(model: @cliente, url: cliente_path(@cliente), method: :patch, html: {class: "needs-validation", novalidate: true}) do |form| %>
           <% if @cliente.errors.any? %>

@@ -21,7 +21,7 @@ class LlamadosController < ApplicationController
     @llamado = @cliente.llamados.build(llamado_params)
 
     if @llamado.save
-      redirect_to cliente_llamados_path(@cliente), notice: "¡El llamado ha sido guardado exitosamente!"
+      redirect_to cliente_llamados_path(@cliente), notice: "¡LLAMADO GUARDADO EXITOSAMENTE!"
 
     else
     
@@ -36,7 +36,7 @@ class LlamadosController < ApplicationController
   # PATCH/PUT /clientes/:cliente_id/llamados/:id
   def update
     if @llamado.update(llamado_params)
-      redirect_to cliente_llamado_path(@cliente, @llamado), notice: "Llamado actualizado exitosamente"
+      redirect_to cliente_llamado_path(@cliente, @llamado), notice: "LLAMADO ACTUALIZADO EXITOSAMENTE"
     else
       render :edit
     end
@@ -45,7 +45,7 @@ class LlamadosController < ApplicationController
   # DELETE /clientes/:cliente_id/llamados/:id
   def destroy
     @llamado.destroy
-    redirect_to cliente_llamados_path(@cliente), notice: "Llamado eliminado exitosamente"
+    redirect_to cliente_llamados_path(@cliente), notice: "LLAMADO ELIMINADO EXITOSAMENTE"
   end
   
 

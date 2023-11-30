@@ -55,8 +55,15 @@ test:
   port: 5432
 
 
+
+
+
 production:
   <<: *default
-  database: televentas_marquezcarlos_production
-  username: televentas_marquezcarlos
-  password: <%= ENV["TELEVENTAS_MARQUEZCARLOS_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  encoding: unicode
+  database: baseteleatencion
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: TU_USUARIO_DE_CLOUD_SQL
+  password: 20672182
+  host: /cloudsql/teleatencion-406619:us-central1:baseteleatencion

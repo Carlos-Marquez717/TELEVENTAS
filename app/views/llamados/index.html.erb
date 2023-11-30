@@ -1,4 +1,4 @@
-<BR><BR>
+<BR><BR><BR><BR>
 <div class="container">
   <% flash.each do |key, value| %>
     <div class="alert alert-success" role="alert">
@@ -12,7 +12,15 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h1 class="text-center">LLAMADO DE: <%= @cliente.nombre %></h1>
+      
+      
+      <div class="card text-center bg-dark text-white">
+        <div class="card-body">
+          <h1 class="text-center">LLAMADO DE: <%= @cliente.nombre %></h1>
+        </div>
+      </div>
+   
+
       
       <table class="table table-dark text-center">
         <thead>
