@@ -315,6 +315,7 @@ GEM
 PLATFORMS
   x64-mingw32
   x64-unknown
+  x86_64‐linux
 
 DEPENDENCIES
   bootsnap

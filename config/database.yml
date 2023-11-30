@@ -21,38 +21,6 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-development:
-  <<: *default
-  database: televentas_marquezcarlos_development
-
-
-  username: postgres
-
- 
-  password: 123456
-
-
-  host: localhost
-
-  
-  port: 5432
-
-
-test:
-  <<: *default
-  database: televentas_marquezcarlos_test
-
-
-  username: postgres
-
- 
-  password: 123456
-
-
-  host: localhost
-
-  
-  port: 5432
 
 
 
@@ -60,10 +28,4 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  database: baseteleatencion
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: TU_USUARIO_DE_CLOUD_SQL
-  password: 20672182
-  host: /cloudsql/teleatencion-406619:us-central1:baseteleatencion
+  url: <%= ENV['DATABASE_URL'] %>
