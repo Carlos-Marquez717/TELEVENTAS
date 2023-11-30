@@ -313,9 +313,9 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
+  linux
   x64-mingw32
   x64-unknown
-  x86_64‐linux
 
 DEPENDENCIES
   bootsnap
