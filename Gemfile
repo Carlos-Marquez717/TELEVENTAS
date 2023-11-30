@@ -80,4 +80,4 @@ gem 'prawn'
 gem 'bootstrap', '~> 5.0'
 
 
-
+gem 'bundler', '2.2.30'
