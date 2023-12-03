@@ -111,6 +111,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
     ffi (1.15.5-x64-unknown)
     globalid (1.1.0)
@@ -186,13 +187,22 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.15.3-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.15.3-arm-linux)
+      racc (~> 1.4)
     nokogiri (1.15.3-x64-mingw32)
       racc (~> 1.4)
     nokogiri (1.15.3-x64-unknown)
       racc (~> 1.4)
+    nokogiri (1.15.3-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.15.3-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     os (1.1.4)
     pdf-core (0.9.0)
+    pg (1.5.3)
     pg (1.5.3-x64-mingw32)
     pg (1.5.3-x64-unknown)
     popper_js (2.11.7)
@@ -320,6 +330,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.0)
+  bundler (= 2.2.30)
   capybara
   debug
   devise
