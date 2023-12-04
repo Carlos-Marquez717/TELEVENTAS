@@ -81,7 +81,7 @@ gem 'prawn'
 gem 'bootstrap', '~> 5.0'
 
 
-gem 'bundler', '2.2.30'
+gem 'bundler', '2.4.18'
 
 
 gem 'matrix', '0.4.1'
